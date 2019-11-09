@@ -1,0 +1,83 @@
+/* 页面整体布局 */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	/* height: 100%; */
+	background: white;
+	font-family:
+		/*'PingFang SC',*/
+		'微軟正黑體', 'Microsoft JhengHei', '微软雅黑', 'Microsoft YaHei', 'STHeiti', 'Gotham';
+
+}
+
+body {
+	overflow-x: hidden;
+}
+
+h1,
+h2 {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ul {
+	/* 去掉小黑点 */
+	list-style: none;
+}
+
+.rigth-arrow {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-left-color:#d70c19;
+	margin-left:5px;
+}
+
+/*头部菜单栏*/
+header .menu {
+	/* 文字颜色 */
+	color: white;
+
+}
+
+header .content {
+	position: relative;
+	z-index: 2;
+}
+
+header .logo {
+	height: 47px;
+	margin-top: 17px;
+	margin-left: 30px;
+}
+
+header .menu {
+	float: right;
+	height: 47px;
+	line-height: 47px;
+	margin-top: 17px;
+	margin-right: 40px;
+}
+
+header .menu li {
+	float: left;
+	font-size: 17px;
+	margin-right: 15px;
+}
+
+/* 微信图标 */
+.menu li:last-child {
+	height: 100%;
+	line-height: 0;
+	margin-left: 10px;
+}
+
+.menu li .wx {
+	margin-top: 50%;
+	/* transform: translateY(-50%); */
+}
